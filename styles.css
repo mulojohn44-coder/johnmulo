@@ -1,0 +1,182 @@
+/* --- Global Styles and Typography --- */
+body {
+    font-family: 'Arial', sans-serif; /* A clean, modern font */
+    margin: 0; /* Remove default browser margin */
+    padding: 0;
+    background-color: #ece9e9cf; /* Light gray background */
+    color: #333; /* Dark gray text */
+    
+}
+
+a {
+    text-decoration: none; /* Remove underline from links */
+    color: #5d4037; /* A subtle, earthy color for links */
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #a1887f; /* Lighter color on hover */
+}
+
+/* --- Header and Navigation --- */
+header {
+    background-color: #ffffff; /* White header background */
+    padding: 15px 5%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex;
+    justify-content: space-between; /* Puts name on left, nav on right */
+    align-items: center;
+    position: sticky;
+}
+
+h1 {
+    font-size: 2em;
+    letter-spacing: 3px;
+    margin: 0;
+    color: #222; /* Darker color for the brand name */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Makes the list horizontal */
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 0;
+}
+
+/* --- Main Content Layout --- */
+main {
+    padding: 20px 5%;
+    max-width: 1200px; /* Limits the width of content for readability */
+    margin: 0 auto; /* Centers the main content */
+}
+
+section {
+    padding: 40px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee; /* Separator between sections */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+    color: #444;
+}
+
+/* --- Hero Section Styling --- */
+#hero {
+    background-color: #eae0d5; /* Soft, neutral background for the hero */
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #eee;
+}
+
+button {
+    background-color: #5d4037;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #7b5e57;
+}
+
+/* --- Outfit Card Grid (For index.html and outfits.html) --- */
+.outfit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 30px;
+    padding-top: 20px;
+}
+
+.outfit-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.outfit-card img {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.outfit-card h3 {
+    color: #5d4037;
+}
+
+/* --- Contact Form Styling (For contactus.html) --- */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't increase total width */
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 40px;
+}
+
